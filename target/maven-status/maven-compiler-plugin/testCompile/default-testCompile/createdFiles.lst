@@ -1,0 +1,4 @@
+ca/com/rbc/provisioning/InMemoryH2Test.class
+ca/com/rbc/provisioning/ProcessUnitTest.class
+ca/com/rbc/provisioning/ProcessScenarioTest.class
+ca/com/rbc/provisioning/ProcessTestCoverageProcessEnginePlugin.class
