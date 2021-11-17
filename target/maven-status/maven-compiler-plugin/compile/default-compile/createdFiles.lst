@@ -1,5 +1,6 @@
 ca/com/rbc/provisioning/LoggerDelegate.class
 ca/com/rbc/provisioning/SendMailDelegate.class
+ca/com/rbc/provisioning/ProcessInstanceDelegate.class
 ca/com/rbc/provisioning/SendMailDelegate$1.class
 ca/com/rbc/provisioning/CamundaApplication$1.class
 ca/com/rbc/provisioning/ProcessConstants.class

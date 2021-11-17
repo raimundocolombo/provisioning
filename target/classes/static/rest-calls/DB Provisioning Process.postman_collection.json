@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "8667ec18-9977-464b-ac46-daf48ab0b104",
+		"name": "DB Provisioning Process",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Start Process",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"businessKey\": \"1\",\n  \"variables\": {\n        \"vendor\": {\n\t\t\t\"type\": \"String\",\n\t\t\t\"valueInfo\": null,\n\t\t\t\"value\": \"postgres\"\n\t\t},\n        \"size\": {\n\t\t\t\"type\": \"Integer\",\n\t\t\t\"valueInfo\": null,\n\t\t\t\"value\": 200\n\t\t},\n        \"tshirtsize\": {\n\t\t\t\"type\": \"String\",\n\t\t\t\"valueInfo\": null,\n\t\t\t\"value\": \"XL\"\n\t\t},\n        \"eraRequest\": {\n          \"type\": \"json\",\n          \"value\": \"{\\\"com.rbc.db_provisioning.EraRequest\\\": {\\\"databaseType\\\": \\\"postgres_database\\\",\\\"name\\\": \\\"rhpam_ins\\\"}}\"\n        }\n    },\n  \"withVariablesInReturn\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/engine-rest/process-definition/key/provisioning/start",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"engine-rest",
+						"process-definition",
+						"key",
+						"provisioning",
+						"start"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
